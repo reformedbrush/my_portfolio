@@ -29,13 +29,37 @@
             <span></span>   
         </div> 
         <div class="menu-links">
-            <li><a href="#about"onclick="toggleMenu()"></a>>About</a></li>
-            <li><a href="#experience"onclick="toggleMenu()"></a>>Experience</a></li>
-            <li><a href="#project"onclick="toggleMenu()"></a>>Project</a></li>
-            <li><a href="#contact"onclick="toggleMenu()"></a>>Contact</a></li>   
+            <li><a href="#about"onclick="toggleMenu()"></a>About</a></li>
+            <li><a href="#experience"onclick="toggleMenu()"></a>Experience</a></li>
+            <li><a href="#project"onclick="toggleMenu()"></a>Project</a></li>
+            <li><a href="#contact"onclick="toggleMenu()"></a>Contact</a></li>   
         </div>
      </div>
     </nav>
+    <section id="prodile">
+        <div class="section__pic-container">
+            <img src="./assets/Purple Abstract Circle Frame Facebook Profile Picture.png" alt="Akshai R Sangeeth profile picture">
+        </div>
+        <div class="selection__text">
+            <p class="selection__text__p1">Hello I'm</p>
+            <h1 class="title">Akshai R Sangeeth</h1>
+            <p class="selection__text__p2">Frontend Developer</p>
+            <div class="btn container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"
+                onclick="location.href='https://www.linkedin.com/in/akshai-r-sangeeth-863519200/'">
+                <img src="./assets/github.png" alt="My GitHub" class="icon"
+                onclick="location.href='https://github.com/reformedbrush'">
+
+            </div>
+        </div>
+
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
