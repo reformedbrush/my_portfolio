@@ -36,22 +36,23 @@
         </div>
      </div>
     </nav>
-    <section id="prodile">
+    <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/Purple Abstract Circle Frame Facebook Profile Picture.png" alt="Akshai R Sangeeth profile picture">
         </div>
-        <div class="selection__text">
-            <p class="selection__text__p1">Hello I'm</p>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
             <h1 class="title">Akshai R Sangeeth</h1>
-            <p class="selection__text__p2">Frontend Developer</p>
-            <div class="btn container">
+            <p class="section__text__p2">Frontend Developer</p>
+
+            <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
                 Download CV</button>
                 <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info</button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon"
+                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon" target="_blank"
                 onclick="location.href='https://www.linkedin.com/in/akshai-r-sangeeth-863519200/'">
                 <img src="./assets/github.png" alt="My GitHub" class="icon"
                 onclick="location.href='https://github.com/reformedbrush'">
@@ -60,6 +61,39 @@
         </div>
 
     </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/2.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>1+ years <br />Frontend Development</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Bachelor's In Computer Applications</p>
+              </div>
+            </div>
+    </section>    
     <script src="script.js"></script>
 </body>
 </html>
