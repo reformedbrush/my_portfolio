@@ -296,6 +296,9 @@ article{
 article.icon{
     cursor: default;
 }
+
+/*contatc*/
+
 #contact{
     display: flex;
     justify-content: center;
