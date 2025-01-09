@@ -294,7 +294,7 @@ section {
 }
 article {
   display: flex;
-  width: 10rem;
+  width: 12rem;
   justify-content: space-around;
   gap: 0.5rem;
 }
@@ -358,4 +358,56 @@ footer p {
   height: auto; /* Maintains aspect ratio */
   margin: 0 auto; /* Centers the image */
   display: block; /* Ensures proper centering */
+}
+
+/* Projects Section */
+#projects {
+  padding-top: 2rem;
+  min-height: 60vh;
+}
+
+.projects-container {
+  padding-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 1rem;
+  border: 0.1rem solid rgb(53, 53, 53);
+  width: 550px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-img {
+  width: 100%;
+  padding-bottom: 35px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-links .btn {
+  width: 90%;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  padding-inline: 90px;
 }
