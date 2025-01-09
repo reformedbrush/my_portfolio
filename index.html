@@ -1,113 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
-</head>
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Akshai R Sangeeth</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Akshai R Sangeeth</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Akshai R Sangeeth</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Akshai R Sangeeth</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
     <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/Purple Abstract Circle Frame Facebook Profile Picture-CMP.png"
+          alt="Akshai R Sangeeth profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Akshai R Sangeeth</h1>
+        <p class="section__text__p2">Software Developer</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ars-cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn"
+            class="icon"
+            target="_blank"
+            onclick="location.href='https://www.linkedin.com/in/akshai-r-sangeeth-863519200/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/reformedbrush'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
         <div class="section__pic-container">
-            <img src="./assets/Purple Abstract Circle Frame Facebook Profile Picture-CMP.png" alt="Akshai R Sangeeth profile picture">
+          <img
+            src="./assets/2-CMP.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello I'm</p>
-            <h1 class="title">Akshai R Sangeeth</h1>
-            <p class="section__text__p2">Frontend Developer</p>
-
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/ars-cv.pdf')">
-                Download CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn" class="icon" target="_blank"
-                onclick="location.href='https://www.linkedin.com/in/akshai-r-sangeeth-863519200/'">
-                <img src="./assets/github.png" alt="My GitHub" class="icon"
-                onclick="location.href='https://github.com/reformedbrush'">
-
-            </div>
-        </div>
-      </section>
-      <section id="about">
-          <p class="section__text__p1">Get To Know More</p>
-          <h1 class="title">About Me</h1>
-          <div class="section-container">
-            <div class="section__pic-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
               <img
-                src="./assets/2-CMP.png"
-                alt="Profile picture"
-                class="about-pic"
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
               />
+              <br />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Developer</p>
+              <br />
+              <p>1+ years <br />Flutter Developer</p>
             </div>
-            <div class="about-details-container">
-              <div class="about-containers">
-                <div class="details-container">
-                  <img
-                    src="./assets/experience.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <h3>Experience</h3>
-                  <p>1+ years <br />Frontend Developer</p>
-                  <br>
-                  <p>3+ years <br />Digital Marketing coordinator</p>
-  
-                </div>
-                <div class="details-container">
-                  <img
-                    src="./assets/education.png"
-                    alt="Education icon"
-                    class="icon"
-                  />
-                  <h3>Education</h3>
-                  <p>Bachelor's In Computer Applications</p>
-                </div>
-              </div>
-              <div class="text-container">
-                  <p>
-                      Welcome to my digital sanctuary! 
-                      <br><br>
-                      I'm Akshai R Sangeeth, an <b>aesthetic 
-                      architect</b> immersed in the symphony of frontend design. With a palette of 
-                      pixels and a passion for seamless interactions, I specialize in crafting 
-                      visually captivating and functionally harmonious web experiences. Embark on 
-                      a journey with me to transform concepts into a tapestry of online artistry.
-                  </p>
-              </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor's In Computer Applications 2022-2025</p>
             </div>
           </div>
-          <img src="./assets/arrow.png" alt="Arrow down" class="icon arrow"
-          onclick="location.href='./#experience'">
+          <div class="text-container">
+            <p>
+              Welcome to my digital sanctuary!
+              <br /><br />
+              I'm Akshai R Sangeeth, an <b>aesthetic architect</b> immersed in
+              the symphony of frontend design. With a palette of pixels and a
+              passion for seamless interactions, I specialize in crafting
+              visually captivating and functionally harmonious web experiences.
+              Embark on a journey with me to transform concepts into a tapestry
+              of online artistry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow down"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
@@ -221,15 +244,15 @@
                   <p>Experienced</p>
                 </div>
               </article>
-                  <article>
-                    <img
-                      src="./assets/bxl-python.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>Python</h3>
-                      <p>Experienced</p>
+              <article>
+                <img
+                  src="./assets/bxl-python.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
             </div>
@@ -242,31 +265,50 @@
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img src="./assets/linkedin.png"alt="LinkedIn icon" class="icon contact-icon">
-          <p><a href="https://www.linkedin.com/in/akshai-r-sangeeth-863519200/">LinkedIn</a></p>
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/akshai-r-sangeeth-863519200/"
+              >LinkedIn</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
-          <p><a href="mailto:akshayrs865@gmail.com">akshayrs865@gmail.com</a></p>
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:akshayrs865@gmail.com">akshayrs865@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
-          <img src="./assets/bxl-instagram.png"alt="Instagram icon" class="icon contact-icon">
+          <img
+            src="./assets/bxl-instagram.png"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
           <p><a href="https://www.instagram.com/aakshaiii/">aakshaiii</a></p>
         </div>
       </div>
     </section>
     <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-      </ul>
-     </div>
-    </nav>
-    <p>copyright &#169; 2024 Akshai R Sangeeth. <br>All Rights Reserved</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>copyright &#169; 2025 Akshai R Sangeeth. <br />All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
