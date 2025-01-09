@@ -351,3 +351,11 @@ footer {
 footer p {
   text-align: center;
 }
+
+#stats2 {
+  width: 50%; /* Adjust the size as needed */
+  max-width: 1500px; /* Ensures it doesn’t get too large */
+  height: auto; /* Maintains aspect ratio */
+  margin: 0 auto; /* Centers the image */
+  display: block; /* Ensures proper centering */
+}
