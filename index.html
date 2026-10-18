@@ -2,352 +2,919 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Akshai R Sangeeth | IT Student in Software and Security</title>
+    <meta
+      name="description"
+      content="Portfolio of Akshai R Sangeeth, a Master of Information Technology student at QUT. Software projects in PHP, Flutter, and a QUT group web app, plus current security study."
+    />
+    <link rel="canonical" href="https://akshairs-portfolio.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Akshai R Sangeeth | IT Student in Software and Security" />
+    <meta
+      property="og:description"
+      content="Master of Information Technology student at QUT. Published work in web and mobile development, with cybersecurity study underway."
+    />
+    <meta property="og:url" content="https://akshairs-portfolio.netlify.app/" />
+    <meta property="og:image" content="https://akshairs-portfolio.netlify.app/assets/profile.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#10151c" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body>
-    <nav id="desktop-nav">
-      <!-- Nav Bar -->
-      <div class="logo">Akshai R Sangeeth</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Akshai R Sangeeth</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+  <body id="top">
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-bar">
+        <a class="brand" href="#top">Akshai R Sangeeth</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-menu"
+          aria-label="Open menu"
+        >
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <!-- Main Content -->
-      <div class="section__pic-container">
-        <img
-          src="./assets/Purple Abstract Circle Frame Facebook Profile Picture-CMP.png"
-          alt="Akshai R Sangeeth profile picture"
-        />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello I'm</p>
-        <h1 class="title">Akshai R Sangeeth</h1>
-        <p class="section__text__p2">Software Developer</p>
-
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/ars-cv.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn"
-            class="icon"
-            target="_blank"
-            onclick="location.href='https://www.linkedin.com/in/akshai-r-sangeeth-863519200/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My GitHub"
-            class="icon"
-            onclick="location.href='https://github.com/reformedbrush'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <!-- About -->
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/2-CMP.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <br />
-              <h3>Experience</h3>
-              <p>2+ years <br />Web Developer</p>
-              <br />
-              <p>1+ years <br />Flutter Developer</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor's In Computer Applications 2022-2025</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Welcome to my digital portfolio! I am Akshai R Sangeeth, a
-              dedicated <b>frontend designer and Flutter developer</b> with a
-              passion for creating exceptional digital experiences. Combining a
-              strong sense of aesthetics with technical expertise, I specialize
-              in developing visually engaging, user-focused web and mobile
-              applications. My work is centered on transforming innovative
-              concepts into functional, intuitive, and impactful solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow down"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <!-- experience -->
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/bxl-flutter.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-html5.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-css3.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-bootstrap.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-javascript.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/bxl-php.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-python.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-jquery.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JQuery</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/bxl-javascript.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/bxl-git.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects">
-      <!-- Projects Section -->
-      <h1 class="title">Projects</h1>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3 class="project-title">TechSHACK</h3>
-          <img
-            src="./assets/pro_tch.jpg"
-            alt="TechSHACK"
-            class="project-img"
-          />
-          <div class="project-links">
-            <a href="https://github.com/reformedbrush/TechSHACK_source_code" class="btn btn-color-2">View on GitHub</a>
-    
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <h3 class="project-title">N Sync</h3>
-          <img
-            src="./assets/pro_nsy.jpg"
-            alt="Project 2"
-            class="project-img"
-          />
-          <div class="project-links">
-            <a href="https://github.com/reformedbrush/NSync_v2.0" class="btn btn-color-2">View on GitHub</a>
-          </div>
-        </div>
-     
-
-    </section>
-
-    <section id="contact">
-      <!-- Contact Section -->
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/akshai-r-sangeeth-863519200/"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:akshayrs865@gmail.com">akshayrs865@gmail.com</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/bxl-instagram.png"
-            alt="Instagram icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.instagram.com/aakshaiii/">aakshaiii</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <!-- Footer -->
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
+        </button>
+        <nav aria-label="Primary">
+          <ul id="site-menu" class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-name">
+        <div>
+          <p class="kicker">Master of Information Technology, QUT</p>
+          <h1 id="hero-name">Akshai R Sangeeth</h1>
+          <p class="statement">Building software. Understanding security.</p>
+          <p class="lede">
+            I'm a Master of Information Technology student at QUT (July 2025 –
+            June 2027) and a former developer intern. I build web and mobile
+            software, and I work on security governance and risk assessment.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-secondary" href="assets/ars-cv.pdf" download>Download resume</a>
+            <a class="btn btn-secondary" href="#contact">Contact me</a>
+          </div>
+          <ul class="socials">
+            <li>
+              <a href="https://github.com/reformedbrush" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/akshai-r-sangeeth-863519200/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
           </ul>
         </div>
-      </nav>
-      <p>copyright &#169; 2025 Akshai R Sangeeth. <br />All Rights Reserved</p>
+        <img
+          class="portrait"
+          src="assets/profile.png"
+          width="640"
+          height="640"
+          alt="Portrait of Akshai R Sangeeth"
+        />
+      </section>
+
+      <section id="about" aria-labelledby="about-title">
+        <p class="kicker">About</p>
+        <h2 id="about-title">Software development, with security beside it</h2>
+        <div class="prose">
+          <p>
+            I'm a Master of Information Technology student at Queensland
+            University of Technology, July 2025 to June 2027. My bachelor's is
+            a Bachelor of Computer Applications from Mahatma Gandhi University,
+            through Nirmala College in Muvattupuzha, Kerala.
+          </p>
+          <p>
+            From November 2024 to April 2025 I was a developer intern at
+            Progressive Software Solutions, building Flutter apps, connecting
+            REST APIs and Firebase, and testing mobile and web software. Project
+            work also includes a PHP and MySQL shop I led, the N Sync campus
+            apps, a QUT lifecycle project on React and AWS, a C# message
+            service, and a cybersecurity governance and risk assessment.
+          </p>
+          <p>
+            I'm looking for ICT graduate programs, junior backend or full-stack
+            roles, and junior cybersecurity positions.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-title">
+        <p class="kicker">Skills</p>
+        <h2 id="skills-title">Skills</h2>
+        <p class="section-intro">
+          Taken from the current resume, the internship, and the projects
+          below. C# and ASP.NET Core are included with that set. No percentage
+          scores, and no certification is claimed.
+        </p>
+
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3>Programming languages</h3>
+            <ul class="chips">
+              <li>C#</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+              <li>Dart</li>
+              <li>PHP</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Web and application development</h3>
+            <ul class="chips">
+              <li>ASP.NET Core / .NET</li>
+              <li>Flutter</li>
+              <li>React</li>
+              <li>REST APIs</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+              <li>jQuery</li>
+              <li>Ajax</li>
+              <li>Android</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Databases and cloud</h3>
+            <ul class="chips">
+              <li>MySQL</li>
+              <li>Azure SQL</li>
+              <li>MongoDB</li>
+              <li>Supabase</li>
+              <li>Firebase</li>
+              <li>Microsoft Azure</li>
+              <li>AWS</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Cybersecurity</h3>
+            <ul class="chips">
+              <li>Cybersecurity governance</li>
+              <li>GRC</li>
+              <li>Risk assessment</li>
+              <li>Risk management</li>
+              <li>OAuth 2.0</li>
+              <li>ISO 27001 alignment</li>
+              <li>Wireshark</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Tools and practice</h3>
+            <ul class="chips">
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>GitHub Actions</li>
+              <li>CI/CD</li>
+              <li>Visual Studio</li>
+              <li>Visual Studio Code</li>
+              <li>Android Studio</li>
+              <li>JIRA</li>
+              <li>Manual testing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <p class="kicker">Projects</p>
+        <h2 id="projects-title">Work I can point to</h2>
+        <p class="section-intro">
+          Every project from the resume is here. A missing link means one was
+          not published, not that the work is unfinished.
+        </p>
+        <div class="card-grid">
+          <article class="project-card">
+            <div class="cover">
+              <span>E-commerce / web</span>
+              <h3>TechSHACK</h3>
+            </div>
+            <div class="project-body">
+              <p>
+                Team lead for a college shop selling computers and hardware.
+                The build covers the interface, inventory and orders, payment
+                mockups, and account login. Stack is PHP and MySQL.
+              </p>
+              <ul class="chips" aria-label="TechSHACK technologies">
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Ajax</li>
+                <li>OAuth 2.0</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" id="open-techshack" data-dialog="dialog-techshack">
+                  View details
+                </button>
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/reformedbrush/TechSHACK_source_code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="cover">
+              <span>Mobile</span>
+              <h3>N Sync</h3>
+            </div>
+            <div class="project-body">
+              <p>
+                Flutter campus app for events and clubs, with college news,
+                faculty event management, student club enrolment, and login.
+              </p>
+              <ul class="chips" aria-label="N Sync technologies">
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>Supabase</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" id="open-nsync" data-dialog="dialog-nsync">
+                  View details
+                </button>
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/reformedbrush/NSync_v2.0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="cover">
+              <span>Software lifecycle · QUT</span>
+              <h3>Community Garden Manager</h3>
+            </div>
+            <div class="project-body">
+              <p>
+                IFN636 group project. I used JIRA for sprints, set up GitHub
+                Actions for build and deploy, and deployed the API on AWS EC2.
+                The product lets members book plots and join events.
+              </p>
+              <ul class="chips" aria-label="Community Garden technologies">
+                <li>React</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>AWS</li>
+                <li>JIRA</li>
+                <li>GitHub Actions</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" id="open-garden" data-dialog="dialog-garden">
+                  View details
+                </button>
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/reformedbrush/G26_IFN636_Assessment2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+                <a
+                  class="btn btn-secondary"
+                  href="https://n12398063-ifn-636-1-2.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live demo</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="cover">
+              <span>Cybersecurity governance</span>
+              <h3>Governance and risk assessment</h3>
+            </div>
+            <div class="project-body">
+              <p>
+                Organisational risk assessment: controls, governance, Wireshark
+                traffic review, and findings presented to executives. Aligned
+                with GRC and ISO 27001.
+              </p>
+              <ul class="chips" aria-label="Risk assessment skills">
+                <li>GRC</li>
+                <li>Risk assessment</li>
+                <li>Wireshark</li>
+                <li>ISO 27001</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" id="open-risk" data-dialog="dialog-risk">
+                  View details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="cover">
+              <span>Backend · QUT capstone</span>
+              <h3>Message Service</h3>
+            </div>
+            <div class="project-body">
+              <p>
+                C# and ASP.NET Core service that receives messages through a
+                REST API, reads and writes JSON, and stores them in Azure SQL
+                for a larger application.
+              </p>
+              <ul class="chips" aria-label="Message Service technologies">
+                <li>C#</li>
+                <li>ASP.NET Core</li>
+                <li>REST</li>
+                <li>JSON</li>
+                <li>Azure SQL</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" id="open-message" data-dialog="dialog-message">
+                  View details
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="cover">
+              <span>C# · object-oriented design</span>
+              <h3>GomokuPlus</h3>
+            </div>
+            <div class="project-body">
+              <p>
+                Console board game in C#: turns, win checks, human and computer
+                play, save and load, special stones, and undo. Later work adds
+                variant rules behind shared interfaces.
+              </p>
+              <ul class="chips" aria-label="GomokuPlus technologies">
+                <li>C#</li>
+                <li>.NET</li>
+                <li>OOP</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary" type="button" id="open-gomoku" data-dialog="dialog-gomoku">
+                  View details
+                </button>
+                <a
+                  class="btn btn-secondary"
+                  href="https://github.com/reformedbrush/IFN584-Assessment3_GomokuProject"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subhead" id="planned">Planned, not built</h3>
+        <p class="section-intro">
+          Ideas for later labs. They are not completed projects and this site
+          does not include tools for them.
+        </p>
+        <div class="stack">
+          <article class="note-card">
+            <p class="meta">Planned</p>
+            <h3>Authorised network lab exercise</h3>
+            <p>
+              A future Python exercise limited to machines I am allowed to
+              test, with input checks, clear errors, and a written report. It
+              has not been started.
+            </p>
+          </article>
+          <article class="note-card">
+            <p class="meta">Planned</p>
+            <h3>Security monitoring lab</h3>
+            <p>
+              A future lab for reading sample logs, noting suspicious events,
+              and writing up what happened. It has not been started, and no
+              detection rules are published here.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" aria-labelledby="education-title">
+        <p class="kicker">Education and experience</p>
+        <h2 id="education-title">Study and the internship</h2>
+        <div class="edu-list">
+          <article class="edu-card">
+            <h3>Master of Information Technology</h3>
+            <p>Queensland University of Technology (QUT)</p>
+            <p>Brisbane, Queensland, Australia</p>
+            <p>July 2025 – June 2027</p>
+          </article>
+          <article class="edu-card">
+            <h3>Bachelor of Computer Applications</h3>
+            <p>Nirmala College, Muvattupuzha</p>
+            <p>Mahatma Gandhi University, Kerala, India</p>
+            <p>2022–2025</p>
+          </article>
+        </div>
+
+        <h3 class="subhead">Experience</h3>
+        <div class="stack">
+          <article class="edu-card">
+            <h3>Developer Intern, Progressive Software Solutions</h3>
+            <p>November 2024 – April 2025</p>
+            <p>
+              Built cross-platform apps in Flutter and Dart, integrated REST
+              APIs and Firebase, and designed the interfaces. Tested mobile and
+              web builds, logged bugs, and worked with developers on the
+              fixes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-title">
+        <p class="kicker">Contact</p>
+        <h2 id="contact-title">Happy to talk about graduate roles</h2>
+        <p class="section-intro">
+          If you are hiring for a graduate program, internship, or junior
+          software or security role, email is the direct line.
+        </p>
+        <div class="contact-panel">
+          <ul class="contact-list">
+            <li>Enoggera, QLD</li>
+            <li>
+              <a href="tel:+61433038350">+61 433 038 350</a>
+            </li>
+            <li>
+              <a href="mailto:akshayrs865@gmail.com">akshayrs865@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/reformedbrush" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/akshai-r-sangeeth-863519200/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/aakshaiii/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+          </ul>
+          <div>
+            <a class="btn btn-primary" href="assets/ars-cv.pdf" download>Download resume</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Copyright 2026 Akshai R Sangeeth. All rights reserved.</p>
     </footer>
+
+    <dialog id="dialog-techshack" aria-labelledby="techshack-label">
+      <div class="dialog-top">
+        <div>
+          <p class="meta">E-commerce / web</p>
+          <h2 id="techshack-label">TechSHACK</h2>
+        </div>
+        <form method="dialog">
+          <button class="dialog-close" type="submit">Close</button>
+        </form>
+      </div>
+      <div class="dialog-body">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            TechSHACK is a college e-commerce site for computers, gaming PCs,
+            and hardware. The repository includes guest, shopper, and admin
+            areas, plus a database folder.
+          </p>
+        </div>
+        <div>
+          <h3>Purpose</h3>
+          <p>
+            Give a shopper a way to browse products, keep a cart, place an
+            order path, and raise a complaint, with separate admin pages.
+          </p>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <p>
+            PHP, MySQL, HTML, CSS, Bootstrap, JavaScript, jQuery, and Ajax.
+            The resume also lists OAuth 2.0 for login. Local setup in the
+            repository README uses XAMPP.
+          </p>
+        </div>
+        <div>
+          <h3>My contribution</h3>
+          <p>
+            Team leader. I designed the interface, payment mockups, and the
+            backend for inventory and orders.
+          </p>
+        </div>
+        <div>
+          <h3>Architecture</h3>
+          <p>Browser pages in PHP read and write MySQL. Guest, user, and admin code sit in separate folders.</p>
+          <svg class="flow" viewBox="0 0 640 96" role="img" aria-labelledby="tech-arch-title tech-arch-desc">
+            <title id="tech-arch-title">TechSHACK request path</title>
+            <desc id="tech-arch-desc">
+              A browser talks to PHP pages split into guest, user, and admin folders, and those pages use MySQL.
+            </desc>
+            <rect x="8" y="20" width="170" height="56" rx="10"></rect>
+            <rect x="235" y="20" width="170" height="56" rx="10"></rect>
+            <rect x="462" y="20" width="170" height="56" rx="10"></rect>
+            <path d="M178 48 H235" fill="none"></path>
+            <path d="M405 48 H462" fill="none"></path>
+            <text x="93" y="52" text-anchor="middle">Browser</text>
+            <text x="320" y="46" text-anchor="middle">PHP pages</text>
+            <text x="320" y="64" text-anchor="middle">Guest, user, admin</text>
+            <text x="547" y="52" text-anchor="middle">MySQL</text>
+          </svg>
+        </div>
+        <div>
+          <h3>Features present in the repository</h3>
+          <ul>
+            <li>Product listing and a product detail page.</li>
+            <li>Search page.</li>
+            <li>Cart, booking, and payment pages in the user area.</li>
+            <li>Complaint submission and complaint history.</li>
+            <li>Ratings, profile edit, and password change pages.</li>
+            <li>A session check that sends users to login when no user id is set.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Security considerations</h3>
+          <p>
+            User pages start a PHP session and redirect when the user id is
+            empty. That is a basic gate, not a production security review. The
+            payment page is part of the flow; a live payment provider is not
+            confirmed here.
+          </p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <div class="links">
+            <a href="https://github.com/reformedbrush/TechSHACK_source_code" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          </div>
+          <p class="hint">No live demo URL is published on the repository.</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-nsync" aria-labelledby="nsync-label">
+      <div class="dialog-top">
+        <div>
+          <p class="meta">Mobile</p>
+          <h2 id="nsync-label">N Sync</h2>
+        </div>
+        <form method="dialog">
+          <button class="dialog-close" type="submit">Close</button>
+        </form>
+      </div>
+      <div class="dialog-body">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            N Sync v2 is three Flutter applications in one repository: student,
+            faculty, and admin. An earlier repository on the same account
+            describes it as a campus tool for events and clubs.
+          </p>
+        </div>
+        <div>
+          <h3>Purpose</h3>
+          <p>
+            Let each role sign in and work with campus events, clubs, and
+            records that match that role, instead of one shared screen for
+            everyone.
+          </p>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <p>Flutter, Dart, and supabase_flutter 2.8.x, confirmed in the student app pubspec.</p>
+        </div>
+        <div>
+          <h3>My contribution</h3>
+          <p>
+            The code is published on this GitHub account. The README files in
+            the app folders are still the Flutter template, so individual
+            versus team credit is not documented.
+          </p>
+        </div>
+        <div>
+          <h3>Architecture</h3>
+          <p>Each Flutter app talks to Supabase for email-and-password sign-in and for table reads.</p>
+          <svg class="flow" viewBox="0 0 640 120" role="img" aria-labelledby="nsync-arch-title nsync-arch-desc">
+            <title id="nsync-arch-title">N Sync app layout</title>
+            <desc id="nsync-arch-desc">
+              Student, faculty, and admin Flutter apps connect to Supabase authentication and database tables.
+            </desc>
+            <rect x="8" y="16" width="150" height="88" rx="10"></rect>
+            <rect x="210" y="16" width="180" height="88" rx="10"></rect>
+            <rect x="442" y="16" width="186" height="88" rx="10"></rect>
+            <path d="M158 60 H210" fill="none"></path>
+            <path d="M390 60 H442" fill="none"></path>
+            <text x="83" y="52" text-anchor="middle">Flutter</text>
+            <text x="83" y="72" text-anchor="middle">three apps</text>
+            <text x="300" y="52" text-anchor="middle">Supabase Auth</text>
+            <text x="300" y="72" text-anchor="middle">email and password</text>
+            <text x="535" y="52" text-anchor="middle">Supabase tables</text>
+            <text x="535" y="72" text-anchor="middle">role records</text>
+          </svg>
+        </div>
+        <div>
+          <h3>Screens confirmed in the source</h3>
+          <ul>
+            <li>Student: login, registration, home, events, event details, my events, clubs, newsletter, feedback, profile.</li>
+            <li>Student login calls Supabase sign-in, then checks tbl_student for an active status.</li>
+            <li>Faculty: login, home, host event, club, department, students, participant list.</li>
+            <li>Admin: login, students, faculty, departments, clubs, events, class assignment, complaints, newsletter, requested events, profile, settings.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Security considerations</h3>
+          <p>
+            Student sign-in is Supabase email and password, followed by a
+            status check on the student row. The “get new password” control on
+            the student login screen has an empty handler in the file that was
+            reviewed, so password reset is not treated as done. Access is split
+            by shipping a separate app per role.
+          </p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <div class="links">
+            <a href="https://github.com/reformedbrush/NSync_v2.0" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          </div>
+          <p class="hint">No live demo URL was found for this app.</p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-garden" aria-labelledby="garden-label">
+      <div class="dialog-top">
+        <div>
+          <p class="meta">QUT · IFN636 · group</p>
+          <h2 id="garden-label">Community Garden Manager</h2>
+        </div>
+        <form method="dialog">
+          <button class="dialog-close" type="submit">Close</button>
+        </form>
+      </div>
+      <div class="dialog-body">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            Assessment 2 for IFN636 Software Life Cycle Management at QUT. The
+            app lets community garden members manage plots, request help, and
+            join events, with an admin side for the same records.
+          </p>
+        </div>
+        <div>
+          <h3>Purpose</h3>
+          <p>
+            Replace informal garden coordination with accounts, plot bookings,
+            a request workflow, and event registration.
+          </p>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <p>
+            React, React Router, Axios, Node.js, Express, MongoDB Atlas,
+            Mongoose, JWT, GitHub Actions, Vercel, and AWS EC2 with PM2, as
+            named in the README.
+          </p>
+        </div>
+        <div>
+          <h3>My contribution</h3>
+          <p>
+            The README names four teammates, including me. On the resume I
+            record this work as using JIRA for sprints, translating stakeholder
+            needs into the solution, implementing GitHub Actions for build and
+            deploy, and deploying the API on AWS EC2. The product features
+            below are the team's.
+          </p>
+        </div>
+        <div>
+          <h3>Architecture</h3>
+          <p>The README describes a React client, an Express API, and MongoDB, with separate deploy targets.</p>
+          <svg class="flow" viewBox="0 0 640 120" role="img" aria-labelledby="garden-arch-title garden-arch-desc">
+            <title id="garden-arch-title">Community Garden architecture from the README</title>
+            <desc id="garden-arch-desc">
+              React on Vercel calls an Express API on EC2, and Express uses MongoDB Atlas. GitHub Actions is described as the build check.
+            </desc>
+            <rect x="8" y="16" width="140" height="88" rx="10"></rect>
+            <rect x="176" y="16" width="140" height="88" rx="10"></rect>
+            <rect x="344" y="16" width="140" height="88" rx="10"></rect>
+            <rect x="512" y="16" width="120" height="88" rx="10"></rect>
+            <path d="M148 48 H176" fill="none"></path>
+            <path d="M316 48 H344" fill="none"></path>
+            <path d="M484 48 H512" fill="none"></path>
+            <text x="78" y="52" text-anchor="middle">React</text>
+            <text x="78" y="72" text-anchor="middle">Vercel</text>
+            <text x="246" y="52" text-anchor="middle">Express API</text>
+            <text x="246" y="72" text-anchor="middle">EC2</text>
+            <text x="414" y="52" text-anchor="middle">MongoDB</text>
+            <text x="414" y="72" text-anchor="middle">Atlas</text>
+            <text x="572" y="58" text-anchor="middle">Actions</text>
+          </svg>
+        </div>
+        <div>
+          <h3>Features documented by the team README</h3>
+          <ul>
+            <li>Registration, login, JWT, and admin or user roles.</li>
+            <li>Plot viewing, booking, and cancellation.</li>
+            <li>Garden requests with pending, approved, rejected, and completed states.</li>
+            <li>Events with registration, plus admin create, update, and delete.</li>
+            <li>Admin and user dashboards.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Security considerations</h3>
+          <p>
+            The README documents JWT authentication and role checks. Demo
+            account details from that README are left off this page. It does
+            not say which of that auth work was mine.
+          </p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <div class="links">
+            <a href="https://github.com/reformedbrush/G26_IFN636_Assessment2" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+            <a href="https://n12398063-ifn-636-1-2.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-message" aria-labelledby="message-label">
+      <div class="dialog-top">
+        <div>
+          <p class="meta">Backend · QUT capstone</p>
+          <h2 id="message-label">Message Service</h2>
+        </div>
+        <form method="dialog">
+          <button class="dialog-close" type="submit">Close</button>
+        </form>
+      </div>
+      <div class="dialog-body">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            A QUT capstone microservice that receives messages and stores them
+            for a larger application and the other services around it.
+          </p>
+        </div>
+        <div>
+          <h3>Purpose</h3>
+          <p>Give the wider system one place to send a message and have it kept.</p>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <p>C#, ASP.NET Core, REST, JSON request and response bodies, and Azure SQL.</p>
+        </div>
+        <div>
+          <h3>My contribution</h3>
+          <p>
+            Backend work on the service: the API that accepts messages and the
+            persistence into Azure SQL. A public repository is not linked.
+          </p>
+        </div>
+        <div>
+          <h3>Architecture</h3>
+          <p>Callers send JSON to the ASP.NET Core API. The service stores the message in Azure SQL.</p>
+          <svg class="flow" viewBox="0 0 640 96" role="img" aria-labelledby="msg-arch-title msg-arch-desc">
+            <title id="msg-arch-title">Message Service path</title>
+            <desc id="msg-arch-desc">A caller sends JSON to an ASP.NET Core API, which stores the message in Azure SQL.</desc>
+            <rect x="8" y="20" width="170" height="56" rx="10"></rect>
+            <rect x="235" y="20" width="180" height="56" rx="10"></rect>
+            <rect x="462" y="20" width="170" height="56" rx="10"></rect>
+            <path d="M178 48 H235" fill="none"></path>
+            <path d="M415 48 H462" fill="none"></path>
+            <text x="93" y="52" text-anchor="middle">Caller</text>
+            <text x="325" y="46" text-anchor="middle">ASP.NET Core</text>
+            <text x="325" y="64" text-anchor="middle">REST, JSON</text>
+            <text x="547" y="52" text-anchor="middle">Azure SQL</text>
+          </svg>
+        </div>
+        <div>
+          <h3>Security considerations</h3>
+          <p>
+            The service sits behind the larger application's access rules.
+            Specific token claims are not listed here.
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-risk" aria-labelledby="risk-label">
+      <div class="dialog-top">
+        <div>
+          <p class="meta">Cybersecurity governance</p>
+          <h2 id="risk-label">Governance and risk assessment</h2>
+        </div>
+        <form method="dialog">
+          <button class="dialog-close" type="submit">Close</button>
+        </form>
+      </div>
+      <div class="dialog-body">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            A cybersecurity governance and risk assessment, written up on the
+            current resume. Private system details and assignment files are not
+            published here.
+          </p>
+        </div>
+        <div>
+          <h3>Purpose</h3>
+          <p>
+            Assess organisational risk, review whether controls and governance
+            matched that risk, and report what should change.
+          </p>
+        </div>
+        <div>
+          <h3>What I did</h3>
+          <ul>
+            <li>Ran organisational cybersecurity risk assessments.</li>
+            <li>Evaluated security controls and governance frameworks.</li>
+            <li>Applied governance, risk, and compliance principles.</li>
+            <li>Used Wireshark to review incoming traffic and feed that into the risk findings.</li>
+            <li>Audited internal controls with stakeholders against ISO 27001 alignment.</li>
+            <li>Presented findings and recommendations to executives, the CEO, and department heads.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Security considerations</h3>
+          <p>
+            This was an assessment and audit of controls, not a certification.
+            ISO 27001 is the standard the review used. No vulnerability write-up
+            is published on this site.
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-gomoku" aria-labelledby="gomoku-label">
+      <div class="dialog-top">
+        <div>
+          <p class="meta">C# · IFN584</p>
+          <h2 id="gomoku-label">GomokuPlus</h2>
+        </div>
+        <form method="dialog">
+          <button class="dialog-close" type="submit">Close</button>
+        </form>
+      </div>
+      <div class="dialog-body">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            A C# console game for an object-oriented design unit. Players place
+            stones on a board, and the program checks legal moves and wins.
+          </p>
+        </div>
+        <div>
+          <h3>Technologies</h3>
+          <p>C# and .NET. The repository includes a test project.</p>
+        </div>
+        <div>
+          <h3>Implementation</h3>
+          <ul>
+            <li>Human versus human, and human versus computer.</li>
+            <li>Ordinary, heavy, and eraser stones, with rules for what can be removed.</li>
+            <li>Save and load, including undo and redo history.</li>
+            <li>Rule objects and strategy objects so variants do not all live in one class.</li>
+            <li>Standard Gomoku plus Reversi-style variants on an 8 by 8 board.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <div class="links">
+            <a href="https://github.com/reformedbrush/IFN584-Assessment3_GomokuProject" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
     <script src="script.js"></script>
   </body>
 </html>
